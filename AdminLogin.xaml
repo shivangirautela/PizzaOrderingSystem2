@@ -1,0 +1,29 @@
+﻿<Window x:Class="PizzaOrderingSystem.AdminLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaOrderingSystem"
+        mc:Ignorable="d"
+        Title="AdminLogin" Height="450" Width="800">
+    <Grid>
+        <Ellipse Fill="Orange" HorizontalAlignment="Left" Height="490" Stroke="Black" VerticalAlignment="Top" Width="732" Margin="-230,-47,0,-22.333"/>
+        <TextBox x:Name="user_name" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Margin="544,164,0,0"/>
+        <Label Content="UserName" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.377,3.173" Margin="370,162,0,0" Height="35" Width="132" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.377,3.173" Margin="370,236,0,0" Height="35" Width="132" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Label Content="Select Role" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.377,3.173" Margin="370,108,0,0" Height="23" Width="100" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Button Content="LOGIN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="176" Margin="544,311,0,0" Height="29" FontWeight="Bold" Click="Button_Click_1"/>
+        <ComboBox x:Name="Select_Your_Role" HorizontalAlignment="Left" VerticalAlignment="Top" Width="176" Margin="544,105,0,0" Height="26" FontFamily="Times New Roman" >
+            <ComboBoxItem >Admin Login</ComboBoxItem>
+            <ComboBoxItem >Employee Login</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Welcome" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.377,3.173" Margin="191,247,0,0" Height="49" Width="104" FontFamily="Times New Roman" FontWeight="Bold" FontSize="20"/>
+        <Label Content="To" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.377,3.173" Margin="224,287,0,0" Height="26" Width="58" FontFamily="Times New Roman" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Pizzeria" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.377,3.173" Margin="205,318,0,0" Height="26" Width="104" FontFamily="Times New Roman" FontWeight="Bold" FontSize="18"/>
+        <Button Content="X" Background="Red" HorizontalAlignment="Left" VerticalAlignment="Top" Width="52" Margin="740,10,0,0" Height="29" FontWeight="Bold" Click="Button_Click_1"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,230,73.333,0" Height="41" Width="176"/>
+        <Button Content="Go To Home" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Margin="623,15,0,0" Height="24"/>
+        <Image HorizontalAlignment="Left" Height="242" VerticalAlignment="Top" Width="347" Source="1008225984.jpg" Stretch="UniformToFill"/>
+
+    </Grid>
+</Window>

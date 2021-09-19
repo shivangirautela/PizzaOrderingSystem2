@@ -1,0 +1,34 @@
+﻿<Window x:Class="PizzaOrderingSystem.PaymentMethods"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaOrderingSystem"
+        mc:Ignorable="d"
+        Title="PaymentMethods" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Orange"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <GroupBox Header="Payment Methods" HorizontalAlignment="Left" FontSize="20" Height="381" VerticalAlignment="Top" Width="678" Margin="46,30,0,0">
+
+            <Grid Margin="152,10,0,-7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="65*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Frame x:Name="Main" Margin="-29,0,28.333,0" NavigationUIVisibility="Hidden"/>
+                <StackPanel Margin="0,0,0.333,10">
+                    <Button Content="CreditCard" Margin="0,0,159.667,0" Height="57"  Background="Beige"></Button>
+                    <Button Content="DebitCard" Margin="0,0,159.667,0" Height="64" Background="Beige" ></Button>
+                    <Button Content="Cash On Delivery" Margin="0,0,159.667,0" Height="64" Background="Beige" ></Button>
+                    <Button Content="Other UPI" Margin="0,0,159.667,0" Height="64" Background="Beige" ></Button>
+                </StackPanel>
+                <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" RenderTransformOrigin="3.067,6.021" Margin="311,272,0,0" Height="35" Click="BackButton"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

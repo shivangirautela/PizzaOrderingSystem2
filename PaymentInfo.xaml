@@ -1,0 +1,36 @@
+﻿<Window x:Class="PizzaOrderingSystem.PaymentInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaOrderingSystem"
+        mc:Ignorable="d"
+        Title="PaymentInfo" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Orange"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <GroupBox Header="Payment Information" FontSize="20" HorizontalAlignment="Left" Height="368" VerticalAlignment="Top" Width="713" Margin="41,10,0,0">
+            <Grid Margin="0,0,-30.667,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="341*"/>
+                </Grid.ColumnDefinitions>
+                <Frame x:Name="Main1"/>
+                <StackPanel Margin="192,217,321,86" Grid.Column="1">
+                    <Button Content="Proceed To Pay" Click="ProceedButton"/>
+                </StackPanel>
+                <Label Content="Item total" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="10,55,0,0" Width="195"/>
+                <TextBox HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="204" Grid.Column="1" Margin="360,50,0,0"/>
+                <Label Content="Taxes And Charges" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="10,92,0,0" Width="195"/>
+                <TextBox HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="204" Grid.Column="1" Margin="360,92,0,0"/>
+                <Label Content="Total Amount" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="10,134,0,0" Width="170"/>
+                <TextBox HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text=" " VerticalAlignment="Bottom" Width="204" RenderTransformOrigin="0.465,0.457" Margin="360,0,0,163" Grid.Column="1"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="68,334,0,0" Click="Button_Click"/>
+
+    </Grid>
+</Window>

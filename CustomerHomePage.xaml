@@ -1,0 +1,34 @@
+﻿<Window x:Class="PizzaOrderingSystem.CustomerHomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaOrderingSystem"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        x:Name="customer_homepage" Height="auto" Width="auto">
+    <Grid Background="Black">
+        <Border BorderBrush="Black" Background="MintCream" BorderThickness="1" HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="727" Margin="24,61,0,0" RenderTransformOrigin="0.494,0.403">
+            <GroupBox x:Name="add_custumer" Background="Orange" Header="Customer Service" Margin="24.667,27.667,430.333,26.667">
+                <RadioButton Content="Add/Update Customer Details" Name="add_update"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,30,0,0" Checked="RadioButton_Checked"/>
+            </GroupBox>
+        </Border>
+        <RadioButton Content="View Order Details" Name="view_order" Checked="view_order_Checked" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="93,176,0,0"/>
+        <RadioButton Content="Search Pizza Ingredients" Checked="search_Checked" Name="search" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="93,214,0,0"/>
+        <RadioButton Content="Place Order/ Checkout" Checked="place_order_Checked" Name="place_order" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="93,257,0,0"/>
+        <GroupBox Background="Orange" BorderThickness="1" x:Name="search_ing" IsEnabled="False" Header="GroupBox" HorizontalAlignment="Left" Height="72" Margin="372,226,0,0" VerticalAlignment="Top" Width="335">
+            <Button Content="Search Ingredients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190" Margin="49,10,0,0" Height="28" Click="Button_Click_1"/>
+        </GroupBox>
+        <GroupBox Background="Black" x:Name="vieworder" IsEnabled="False" Header="GroupBox" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="335" Margin="372,146,0,0">
+            <Button Content="View Order Details" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Height="28" Margin="52,0,0,0" Click="Button_Click_3"/>
+        </GroupBox>
+        <GroupBox Background="Black" x:Name="checkout" IsEnabled="False" Header="GroupBox" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="335" Margin="372,303,0,0">
+            <Button Content="Checkout" HorizontalAlignment="Left" VerticalAlignment="Top" Width="123" Height="28" Margin="160,10,0,0" Click="Button_Click_2"/>
+        </GroupBox>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="36,10,0,0"/>
+        <GroupBox Background="Orange" Header="GroupBox" HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="335" Margin="372,61,0,0">
+            <Button x:Name="add_updateCust" Content="Add Update Customer" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" Margin="48,10,0,0" Height="22" Click="add_updateCust_Click"/>
+        </GroupBox>
+        <Button x:Name="place_neworder" Content="Place Order" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="404,329,0,0" Height="26" Click="place_neworder_Click"/>
+    </Grid>
+</Window>
